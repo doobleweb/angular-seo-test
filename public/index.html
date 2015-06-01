@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head ng-controller="MetaCtrl">
+    <meta charset="UTF-8">
+    <title>{{MetaSrv.title}}</title>
+    <base href="/">
+</head>
+<body>
+     
+    <nav>
+        <ul>
+            <li><a ui-sref="home">עמוד הבית</a></li>
+            <li><a ui-sref="page1">חרדות מגניבות</a></li>
+            <li><a ui-sref="page2">מינוי לעיתון</a></li>
+            <li><a ui-sref="page3">רגעים שנזכור</a></li>
+        </ul>
+    </nav>
+
+    <div ui-view></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
