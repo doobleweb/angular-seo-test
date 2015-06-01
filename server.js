@@ -9,4 +9,4 @@ app.all('/*', function(req, res, next) {
     res.sendFile('public/index.html', { root: __dirname });
 });
 
-app.listen(3000); //the port you want to use
+app.listen(app.get('port') || 3000); //the port you want to use
